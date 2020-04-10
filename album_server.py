@@ -34,7 +34,7 @@ def create_album():
     if not isinstance(genre, str):
         raise HTTPError(400, "Указан некорректный жанр альбома")
     if not isinstance(album, str):
-        raise HTTPError(400, "Указано некорректный название альбома")
+        raise HTTPError(400, "Указано некорректное название альбома")
 
     try:
         new_album = album.save(year, artist, genre, album_name)
